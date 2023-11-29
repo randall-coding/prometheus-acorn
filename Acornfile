@@ -6,5 +6,8 @@ containers: {
                 "9090/http"
             ]
         }
+        dirs: {
+            "/etc/prometheus/prometheus.yml": "./prometheus.yml"
+        }
     }
 }
