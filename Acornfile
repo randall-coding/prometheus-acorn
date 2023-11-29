@@ -8,6 +8,16 @@ containers: {
         }
         dirs: {
             "/etc/prometheus/prometheus.yml": "./prometheus.yml"
+            "/prometheus/": "prometheus-data"
+        }
+        sidecars: "volume-permissions": {
+        init: true
+        image: "ubuntu"
+            dirs: {
+                "/prometheus/": "prometheus-data"
+                "/home/": "./sidecar.sh"  
+            }
+            command: "/bin/bash /home/sidecar.sh"
         }
     }
     grafana: {
@@ -18,4 +28,9 @@ containers: {
             ]
         }
     }
+}
+
+volumes: "prometheus-data": {
+    size: "1Gi"
+    accessModes: "readWriteOnce"
 }
