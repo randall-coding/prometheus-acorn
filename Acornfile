@@ -1,5 +1,5 @@
 containers: {
-    web: {
+    prometheus: {
         image: "prom/prometheus:v2.48.0"
         ports: {
             publish: [
@@ -8,6 +8,14 @@ containers: {
         }
         dirs: {
             "/etc/prometheus/prometheus.yml": "./prometheus.yml"
+        }
+    }
+    grafana: {
+        image: "grafana/grafana-oss:10.2.2-ubuntu"
+        ports: {
+            publish: [
+                "3000/http"
+            ]
         }
     }
 }
