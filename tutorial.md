@@ -93,13 +93,19 @@ In the form enter `http://promethus:9090` for the url.  That is the cluster ip a
 
 Click Explore in the left side panel to set up your first visualization.  
 
-Select the Prometheus data source from the dropdown, and select a metric to graph.  
+Select the Prometheus data source from the dropdown at the top of the page, and select a metric under the "Metric" select box.  This metric will be made into a graph to visualize your data.  
 
-!! image 
+![metric_select](https://github.com/randall-coding/prometheus-acorn/assets/39175191/7c4dddcd-d246-4d64-9bd7-a92eec1e07e1)
 
-Congratulations, you've now set up your own Prometheus/Grafana cluster monitoring your server.
+Select Label Filters from the drop down and fill in any other graph options you like.  Then click "Run Query".  This will show a preview of the graph.  
+![graph_preview](https://github.com/randall-coding/prometheus-acorn/assets/39175191/770a44f0-8571-4e90-bc81-88cf21db8cd7)
+
+If you like the graph click the "Add To Dashboard" button and you're done.
+
+Congratulations, we've now set up a Prometheus/Grafana cluster monitoring a server and made our first data visualization.  For more information on Prometheus and Grafana see the references section below. 
 
 ## References
 [Getting started with Prometheus](https://prometheus.io/docs/prometheus/latest/getting_started/)
 [Getting started with Grafana and Prometheus](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
+[Grafana documentation](https://grafana.com/docs/grafana/latest/)
 [Grafana docker setup](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)
