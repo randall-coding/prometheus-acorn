@@ -8,7 +8,7 @@ Prometheus scrapes metrics from specified targets at regular intervals, supporti
 ## Grafana
 Grafana is a popular open-source analytics and interactive visualization web application that provides rich tools for monitoring and data analysis. It works in combination with time-series databases like Prometheus data sources. It is user-friendly but has robust features, including advanced querying, dynamic dashboards, and extensive alerting options. Grafana is designed to work with a variety of data sources but today we will be using Prometheus.
 
-Putting Prometheus and Grafan in the same cluster is a powerful combination.  To make this deployment process easier, in this tutorial we will be deploying the cluster as an acorn application.
+Putting Prometheus and Grafan in the same cluster is a powerful combination.  To make this deployment much easier, in this tutorial we are deploying the cluster as an acorn image.
 
 ## What is Acorn? 
 Acorn is a new cloud platform that allows you to easily deploy, develop and manage web services with containerization.  A single acorn image can deploy all that you need: from a single container webserver, to a multi service Kubernetes cluster with high availability.  Don't worry if you don't understand what all those terms mean; we don't have to know that in order to deploy our server.
