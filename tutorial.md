@@ -72,7 +72,7 @@ Visit your dashboard to see if your deployment was successful.
 
 Click on the prometheus-grafana deployment, and find the endpoint section on the right side panel.  These are your Prometheus and Grafana dashboard links.
 
-!! image of endpoints
+![endpoints](https://github.com/randall-coding/prometheus-acorn/assets/39175191/f5a05fad-4500-4622-9af2-5dff8abe631e)
 
 ## Setting up Grafana
 Visit the Grafana dashboard endpoint.
@@ -81,15 +81,15 @@ Login with the default credentials `admin`/`admin`.
 
 Select Connections > Data Sources in the left side panel.  
 
-!! image 
+![connections](https://github.com/randall-coding/prometheus-acorn/assets/39175191/6d586d24-72f7-44de-9d21-e58fc2744bef)
 
 Select the Prometheus data source 
 
-!! image 
+![select_prometheus](https://github.com/randall-coding/prometheus-acorn/assets/39175191/fc916567-e99c-49bf-9e35-47513395dd23)
 
 In the form enter `http://promethus:9090` for the url.  That is the cluster ip address for our Prometheus instance.
 
-!! image 
+![enter_url](https://github.com/randall-coding/prometheus-acorn/assets/39175191/e7d28aa9-c8ee-4fc2-870c-bb7514dd8ce8)
 
 Click Explore in the left side panel to set up your first visualization.  
 
