@@ -1,11 +1,11 @@
-# Launch a Prometheus + Grafana cluster
+# Launch a Prometheus/Grafana monitoring cluster
 
 ## Prometheus
 Prometheus is an open-source monitoring and alerting toolkit, known for its reliability in dynamic service environments, such as cloud-based architectures and microservices. It's particularly popular for its ability to handle large volumes of real-time metrics. Its core features include a multi-dimensional data model and a powerful query language (PromQL), enabling detailed aggregation and analysis of metrics.
 
 Prometheus scrapes metrics from specified targets at regular intervals, supporting both service discovery and static configuration. Its rich toolset includes efficient data storage, advanced graphing and dashboarding capabilities (notably with Grafana), and a flexible alerting system managed through Alertmanager.
 
-## Grafana 
+## Grafana
 Grafana is a popular open-source analytics and interactive visualization web application that provides rich tools for monitoring and data analysis. It works in combination with time-series databases like Prometheus data sources. It is user-friendly but has robust features, including advanced querying, dynamic dashboards, and extensive alerting options. Grafana is designed to work with a variety of data sources but today we will be using Prometheus.
 
 Putting Prometheus and Grafan in the same cluster is a powerful combination.  To make this deployment process easier, in this tutorial we will be deploying the cluster as an acorn application.
@@ -68,16 +68,36 @@ Now that we have Prometheus configured, we can create and deploy our acorn image
 
 `acorn run -n  prometheus-grafana  prometheus-grafana`
 
+Visit your dashboard to see if your deployment was successful.
+
+Click on the prometheus-grafana deployment, and find the endpoint section on the right side panel.  These are your Prometheus and Grafana dashboard links.
+
+!! image of endpoints
+
 ## Setting up Grafana
+Visit the Grafana dashboard endpoint.
+
 Login with the default credentials `admin`/`admin`.
 
-From the dashbaord select Connections > Data Sources in the left side panel.  Select the Prometheus data source option and the click the "Add New Data Source" button.
+Select Connections > Data Sources in the left side panel.  
+
+!! image 
+
+Select the Prometheus data source 
+
+!! image 
 
 In the form enter `http://promethus:9090` for the url.  That is the cluster ip address for our Prometheus instance.
+
+!! image 
 
 Click Explore in the left side panel to set up your first visualization.  
 
 Select the Prometheus data source from the dropdown, and select a metric to graph.  
+
+!! image 
+
+Congratulations, you've now set up your own Prometheus/Grafana cluster monitoring your server.
 
 ## References
 [Getting started with Prometheus](https://prometheus.io/docs/prometheus/latest/getting_started/)
