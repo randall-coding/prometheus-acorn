@@ -102,10 +102,10 @@ Select Label Filters from the drop down and fill in any other graph options you 
 
 If you like the graph click the "Add To Dashboard" button and you're done.
 
-Congratulations, we've now set up a Prometheus/Grafana cluster monitoring a server and made our first data visualization.  For more information on Prometheus and Grafana see the references section below. 
+Congratulations, we've now set up a Prometheus/Grafana cluster and made our first data visualization.  For more information on Prometheus and Grafana see the references section below. 
 
 ## References
-[Getting started with Prometheus](https://prometheus.io/docs/prometheus/latest/getting_started/)
-[Getting started with Grafana and Prometheus](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
-[Grafana documentation](https://grafana.com/docs/grafana/latest/)
-[Grafana docker setup](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)
+* [Getting started with Prometheus](https://prometheus.io/docs/prometheus/latest/getting_started/)
+* [Getting started with Grafana and Prometheus](https://grafana.com/docs/grafana/latest/getting-started/get-started-grafana-prometheus/)
+* [Grafana documentation](https://grafana.com/docs/grafana/latest/)
+* [Grafana docker setup](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)
