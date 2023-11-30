@@ -40,7 +40,7 @@ Back in our local command terminal login to acorn.io with: <br>
 `acorn login acorn.io` 
 
 ## Configure Prometheus
-Prometheus can be configured by editing the `prometheus.yml` file of this repository before building your acorn image.  The most important configuration options revolve around your targets.  Targets are services which send data to Prometheus. For example in the configuration below, 3 targets are set up which provide data to the Prometheus server.  Two of those targets (localhost:8080 and localhost:8081) are grouped into the "production" group and the third target (localhost:8082) is grouped into the "canary" group.
+Prometheus can be configured by editing the `prometheus.yml` file of this repository before building your acorn image.  The most important configuration options revolve around your **targets**.  Targets are services which send data to Prometheus. For example in the configuration below, 3 targets are set up which provide data to the Prometheus server.  Two of those targets (localhost:8080 and localhost:8081) are grouped into the "production" group and the third target (localhost:8082) is grouped into the "canary" group.
 
 ```
 scrape_configs:
@@ -62,7 +62,7 @@ scrape_configs:
 See the [getting started](https://prometheus.io/docs/prometheus/latest/getting_started/) and [configuration](https://prometheus.io/docs/prometheus/latest/configuration/configuration/) documentation for more detailed instructions.    
 
 ## Deploying Acorn
-Now that we have Prometheus configured, we can create and deploy our acorn image with a few simple commands.
+Now that we have Prometheus configured, we can deploy our acorn image with a few simple commands.
 
 `acorn build -t prometheus-grafana`
 
@@ -83,11 +83,11 @@ Select Connections > Data Sources in the left side panel.
 
 ![connections](https://github.com/randall-coding/prometheus-acorn/assets/39175191/6d586d24-72f7-44de-9d21-e58fc2744bef)
 
-Select the Prometheus data source 
+Select the Prometheus data source. 
 
 ![select_prometheus](https://github.com/randall-coding/prometheus-acorn/assets/39175191/fc916567-e99c-49bf-9e35-47513395dd23)
 
-In the form enter `http://promethus:9090` for the url.  That is the cluster ip address for our Prometheus instance.
+Enter `http://promethus:9090` for the connection url.  `http://promethus:9090` is the cluster ip address for our Prometheus instance.
 
 ![enter_url](https://github.com/randall-coding/prometheus-acorn/assets/39175191/e7d28aa9-c8ee-4fc2-870c-bb7514dd8ce8)
 
@@ -97,7 +97,10 @@ Select the Prometheus data source from the dropdown at the top of the page, and 
 
 ![metric_select](https://github.com/randall-coding/prometheus-acorn/assets/39175191/7c4dddcd-d246-4d64-9bd7-a92eec1e07e1)
 
-Select Label Filters from the drop down and fill in any other graph options you like.  Then click "Run Query".  This will show a preview of the graph.  
+Select "Label filters" from the drop down and fill in any other graph options you like.  
+
+Now click "Run Query" to show a preview of the graph.  
+
 ![graph_preview](https://github.com/randall-coding/prometheus-acorn/assets/39175191/770a44f0-8571-4e90-bc81-88cf21db8cd7)
 
 If you like the graph click the "Add To Dashboard" button and you're done.
