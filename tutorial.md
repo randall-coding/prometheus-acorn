@@ -95,6 +95,8 @@ Click Explore in the left side panel to set up your first visualization.
 
 Select the Prometheus data source from the dropdown at the top of the page, and select a metric under the "Metric" select box.  This metric will be made into a graph to visualize your data.  
 
+![data-source_dropdown](https://github.com/randall-coding/prometheus-acorn/assets/39175191/d88548bd-69fc-4fb7-b2fe-289923c9b823)
+
 ![metric_select](https://github.com/randall-coding/prometheus-acorn/assets/39175191/7c4dddcd-d246-4d64-9bd7-a92eec1e07e1)
 
 Select "Label filters" from the drop down and fill in any other graph options you like.  
