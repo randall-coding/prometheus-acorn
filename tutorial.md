@@ -1,7 +1,7 @@
 # Launch a Prometheus/Grafana monitoring cluster
 
 ## Prometheus
-Prometheus is an open-source monitoring and alerting toolkit, known for its reliability in dynamic service environments, such as cloud-based architectures and microservices. It's particularly popular for its ability to handle large volumes of real-time metrics. Its core features include a multi-dimensional data model and a powerful query language (PromQL), enabling detailed aggregation and analysis of metrics.
+Prometheus is an open-source monitoring and alerting toolkit, known for its reliability in cloud-based architectures and microservices. It's particularly popular for its ability to handle large volumes of real-time metrics. Its core features include a multi-dimensional data model and a powerful query language (PromQL), enabling detailed aggregation and analysis of metrics.
 
 Prometheus scrapes metrics from specified targets at regular intervals, supporting both service discovery and static configuration. Its rich toolset includes efficient data storage, advanced graphing and dashboarding capabilities (notably with Grafana), and a flexible alerting system managed through Alertmanager.
 
