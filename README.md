@@ -2,7 +2,7 @@
 Acorn deployment for prometheus
 
 # Tutorial
-For instructions on how to use this repo, see the [tutorial]() page.
+For instructions on how to use this repo, see the [tutorial](/tutorial.md) page.
 
 # Prometheus source code
 https://github.com/prometheus/prometheus/tree/main
