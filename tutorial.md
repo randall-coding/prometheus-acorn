@@ -64,6 +64,12 @@ See the [getting started](https://prometheus.io/docs/prometheus/latest/getting_s
 ## Deploying Acorn
 Now that we have Prometheus configured, we can deploy our acorn image with a few simple commands.
 
+First clone the repo locally.
+
+`git clone https://github.com/randall-coding/prometheus-acorn.git`
+
+Then run the build and run commands in the `prometheus-acorn/` folder.
+
 `acorn build -t prometheus-grafana`
 
 `acorn run -n  prometheus-grafana  prometheus-grafana`
